@@ -1,0 +1,69 @@
+= Antigravity Auto-Accept Extension
+:author: Google Antigravity
+:revnumber: 1.0.0
+:toc: macro
+:icons: font
+
+This extension provides a convenient Status Bar toggle for auto-accepting action requests from the Antigravity agent.
+
+toc::[]
+
+== Overview
+
+The *Antigravity Auto-Accept* extension adds a status bar item that allows you to quickly enable or disable automation for agentic tools. It specifically targets `run_command` calls, browser interactions, and file edits.
+
+As per user preferences, **file edits (diffs) are disabled by default** and must be explicitly enabled in the settings.
+
+== Features
+
+* **Status Bar Toggle**: $(zap) icon to quickly switch between auto-accept ON and OFF.
+* **Smart Synchronization**: Syncs your preferences with the core Antigravity `chat.tools` configuration.
+* **Customizable Settings**: Fine-grained control over which tool types are auto-accepted.
+* **No Bloat**: No sidebar icons or extra panels; everything stays in the Status Bar and standard Settings UI.
+
+== Configuration
+
+This extension contributes the following settings under the `antigravity.autoAccept` namespace:
+
+`antigravity.autoAccept.enabled`::
+    Global toggle to turn on/off all auto-acceptance.
+    Default: `true`
+
+`antigravity.autoAccept.runCommands`::
+    Automatically approve `run_command` calls when the global toggle is ON.
+    Default: `true`
+
+`antigravity.autoAccept.fileEdits`::
+    Automatically approve file edits (diffs). 
+    Default: `false` (Requested by user to review diffs manually).
+
+`antigravity.autoAccept.browserActions`::
+    Automatically approve browser interaction calls.
+    Default: `true`
+
+== How-to: Installation
+
+1. Create a folder in your VS Code extensions directory: `\%USERPROFILE%\.antigravity\extensions\antigravity-auto-accept`.
+2. Copy `package.json` and `extension.js` to this folder.
+3. Restart Antigravity.
+
+== Reference
+
+The extension interacts with the standard VS Code `workspace.getConfiguration` API to update the following global settings:
+
+* `chat.tools.terminal.autoApprove`
+* `chat.tools.edits.autoApprove`
+* `chat.tools.global.autoApprove`
+
+== Diátaxis: Tutorial
+
+=== Quick Start
+
+1. Look for the $(circle-slash) or $(zap) icon in the bottom right corner (Status Bar).
+2. Click the icon to toggle **Auto-Accept**.
+3. If highlighted in yellow/orange, Antigravity will automatically execute commands without asking for permission (except for file diffs).
+4. Click the icon again to return to manual approval mode.
+
+== Explanation: Why manual diffs?
+
+Automation is powerful but risky. By defaulting `fileEdits` to `false`, we ensure that you always have a chance to review code changes before they are applied to your workspace, preventing accidental overwrites or logical errors.

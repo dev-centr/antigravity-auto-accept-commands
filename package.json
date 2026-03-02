@@ -1,0 +1,54 @@
+{
+  "name": "antigravity-auto-accept",
+  "displayName": "Antigravity Auto-Accept",
+  "description": "Automatically accept run commands in Google Antigravity with a status bar toggle.",
+  "version": "1.0.0",
+  "publisher": "google-antigravity",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "main": "./extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "antigravity-auto-accept.toggle",
+        "title": "Antigravity: Toggle Auto-Accept"
+      },
+      {
+        "command": "antigravity-auto-accept.configure",
+        "title": "Antigravity: Configure Auto-Accept Settings"
+      }
+    ],
+    "configuration": {
+      "title": "Antigravity Auto-Accept",
+      "properties": {
+        "antigravity.autoAccept.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Global toggle for auto-accepting actions."
+        },
+        "antigravity.autoAccept.runCommands": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically approve run_command calls when global toggle is on."
+        },
+        "antigravity.autoAccept.fileEdits": {
+          "type": "boolean",
+          "default": false,
+          "description": "Automatically approve file edits (diffs). Defaults to false as requested."
+        },
+        "antigravity.autoAccept.browserActions": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically approve browser interaction calls."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "postinstall": "npm install @types/vscode"
+  }
+}
