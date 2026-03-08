@@ -1,3 +1,5 @@
+link:https://github.com/dev-centr/antigravity-auto-accept-commands[image:https://img.shields.io/badge/repo-GitHub-24292e?style=flat[Repository]]
+
 = Antigravity Auto-Accept Extension
 :author: Google Antigravity
 :revnumber: 1.0.0
