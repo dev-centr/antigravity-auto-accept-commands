@@ -1,16 +1,17 @@
 <a id="readme-top"></a>
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-
 <div align="center">
-  <h1>Antigravity Auto-Accept</h1>
-  <p>Cursor extension: status bar toggle to auto-accept Antigravity agent action requests.</p>
-  <p>
+  <a href="https://github.com/dev-centr/antigravity-auto-accept-commands/graphs/contributors"><img src="https://img.shields.io/github/contributors/dev-centr/antigravity-auto-accept-commands.svg?style=for-the-badge" alt="Contributors"></a>
+  <a href="https://github.com/dev-centr/antigravity-auto-accept-commands/network/members"><img src="https://img.shields.io/github/forks/dev-centr/antigravity-auto-accept-commands.svg?style=for-the-badge" alt="Forks"></a>
+  <a href="https://github.com/dev-centr/antigravity-auto-accept-commands/stargazers"><img src="https://img.shields.io/github/stars/dev-centr/antigravity-auto-accept-commands.svg?style=for-the-badge" alt="Stargazers"></a>
+  <a href="https://github.com/dev-centr/antigravity-auto-accept-commands/issues"><img src="https://img.shields.io/github/issues/dev-centr/antigravity-auto-accept-commands.svg?style=for-the-badge" alt="Issues"></a>
+
+  <h3 align="center">Antigravity Auto-Accept</h3>
+
+  <p align="center">
+    Cursor extension: status bar toggle to auto-accept Antigravity agent action requests.<br />
+    <br />
     <a href="https://github.com/dev-centr/antigravity-auto-accept-commands/issues">Report Bug</a>
-    ·
+    &middot;
     <a href="https://github.com/dev-centr/antigravity-auto-accept-commands/issues">Request Feature</a>
   </p>
 </div>

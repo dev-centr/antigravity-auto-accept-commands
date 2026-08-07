@@ -3,6 +3,27 @@ ifndef::env-github[:icons: font]
 :toclevels: 2
 :sectanchors:
 
+ifdef::env-github[]
+++++
+<a id="readme-top"></a>
+<div align="center">
+<a href="https://github.com/dev-centr/antigravity-auto-accept-commands/graphs/contributors"><img src="https://img.shields.io/github/contributors/dev-centr/antigravity-auto-accept-commands.svg?style=for-the-badge" alt="Contributors"></a>
+<a href="https://github.com/dev-centr/antigravity-auto-accept-commands/network/members"><img src="https://img.shields.io/github/forks/dev-centr/antigravity-auto-accept-commands.svg?style=for-the-badge" alt="Forks"></a>
+<a href="https://github.com/dev-centr/antigravity-auto-accept-commands/stargazers"><img src="https://img.shields.io/github/stars/dev-centr/antigravity-auto-accept-commands.svg?style=for-the-badge" alt="Stars"></a>
+<a href="https://github.com/dev-centr/antigravity-auto-accept-commands/issues"><img src="https://img.shields.io/github/issues/dev-centr/antigravity-auto-accept-commands.svg?style=for-the-badge" alt="Issues"></a>
+<br />
+<h3 align="center">Antigravity Auto-Accept Extension</h3>
+<p align="center">
+Cursor / Antigravity status-bar toggle to auto-accept agent action requests (`run_command`, browser, file edits).<br /><br />
+<a href="https://github.com/dev-centr/antigravity-auto-accept-commands/issues">Report Bug</a>
+&middot;
+<a href="https://github.com/dev-centr/antigravity-auto-accept-commands/issues">Request Feature</a>
+</p>
+</div>
+++++
+endif::[]
+
+ifndef::env-github[]
 image:https://img.shields.io/github/contributors/dev-centr/antigravity-auto-accept-commands.svg?style=for-the-badge[Contributors,link=https://github.com/dev-centr/antigravity-auto-accept-commands/graphs/contributors]
 image:https://img.shields.io/github/forks/dev-centr/antigravity-auto-accept-commands.svg?style=for-the-badge[Forks,link=https://github.com/dev-centr/antigravity-auto-accept-commands/network/members]
 image:https://img.shields.io/github/stars/dev-centr/antigravity-auto-accept-commands.svg?style=for-the-badge[Stars,link=https://github.com/dev-centr/antigravity-auto-accept-commands/stargazers]
@@ -14,6 +35,7 @@ Cursor / Antigravity status-bar toggle to auto-accept agent action requests (`ru
 
 link:https://github.com/dev-centr/antigravity-auto-accept-commands/issues[Report Bug] ·
 link:https://github.com/dev-centr/antigravity-auto-accept-commands/issues[Request Feature]
+endif::[]
 
 == About The Project
 
