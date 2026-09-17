@@ -50,5 +50,8 @@
   },
   "scripts": {
     "postinstall": "npm install @types/vscode"
+  },
+  "dependencies": {
+    "@chenglou/pretext": "^0.0.4"
   }
 }
